@@ -3,22 +3,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet/less" type="text/css" href="styles/style.less">
+    <script src="js/less.js" type="text/javascript"></script>
     <link rel="stylesheet" href="/styles/normal.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
     <title>Denis Novic Landing page</title>
   </head>
   <body>
     <header>
+
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a href="" class="menu-item active">Home</a></li>
+          <li><a href="" class="menu-item">About me</a></li>
+          <li><a href="" class="menu-item">Skills</a></li>
+          <li><a href="" class="menu-item">Portfolio</a></li>
+          <li><a href="" class="menu-item">Contacts</a></li>
+        </ul>
+      </div>
+
       <nav>
         <ul class="menu">
           <li><a href="" class="menu-item active">Home</a></li>
           <li><a href="" class="menu-item">About me</a></li>
-          <li><a href="" class="menu-item">kills</a></li>
+          <li><a href="" class="menu-item">Skills</a></li>
           <li><a href="" class="menu-item">Portfolio</a></li>
           <li><a href="" class="menu-item">Contacts</a></li>
         </ul>
       </nav>
+
     </header>
+
     <main class="main-container">
       <section class="introduce">
         <div class="introduce-wrapper">
@@ -30,7 +48,7 @@
             <a href="" class="lang-link">ENG</a>
           </div>
         </div>
-        <img src="/img/BSPP2266.jpg" />
+        <div class="backgound-image"></div>
       </section>
       <section class="about-description">
         <h2>About me</h2>
@@ -49,7 +67,7 @@
         <p>I work in such programs as</p>
         <div class="grid-wrapper">
           <div class="griditem-1">
-            <img src="/img/PS.svg" alt="" />
+            <img src="/img/PS.svg" alt="" / class="skill-icon">
             <span class="app-name">Adobe Photoshop</span>
             <div class="stars">
               <img src="/img/Star.svg" class="star" /><img
@@ -106,15 +124,15 @@
       <section class="portfolio">
         <h2>Portfolio</h2>
         <div class="portfolio-item">
-          <img src="/img/portfolio1.jpg" />
+          <img src="/img/portfolio1.jpg" class="portfolio-image"/>
           <a href="">Online fashion store - Homepage</a>
         </div>
         <div class="portfolio-item">
-          <img src="/img/reebok_web.jpg" />
+          <img src="/img/reebok_web.jpg" class="portfolio-image"/>
           <a href="">Reebok Store - Concept</a>
         </div>
         <div class="portfolio-item">
-          <img src="/img/reebok_web (1).jpg" />
+          <img src="/img/reebok_web (1).jpg" class="portfolio-image"/>
           <a h>Reebok Store - Concept</a>
         </div>
       </section>
@@ -128,7 +146,7 @@
           <img src="/img/3.svg" alt="" />
           <img src="/img/4.svg" alt="" />
         </div>
-        <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
+        <p class="social-text">Like me on LinkedIn, Instagram, Behance, Dribble</p>
       </section>
     </main>
   </body>
