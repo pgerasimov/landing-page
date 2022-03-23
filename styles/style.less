@@ -87,6 +87,10 @@ nav {
   padding: 32px 0 32px 0;
 }
 
+.lang-menu {
+  visibility: hidden;
+}
+
 .menu-item {
   text-decoration: none;
   color: #828282;
@@ -322,7 +326,7 @@ nav {
   border-radius: 35px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 500px) {
 
   header {
     display: flex;
@@ -370,6 +374,21 @@ nav {
   .menu__btn > span::after {
     content: '';
     top: 8px;
+  }
+
+  .lang-menu {
+    visibility: inherit;
+    position: absolute;
+    transform: rotate(270deg);
+    // padding: 200px 0 0 130px;
+    bottom: 220px;
+    right: 30px;
+    
+  }
+
+  .lang-link {
+    text-decoration: none;
+    color: black;
   }
 
   /* контейнер меню */
