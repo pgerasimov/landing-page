@@ -1,2 +1,2 @@
 # Some designer Landing Page
-desctop and mobile versions
+desktop and mobile versions
